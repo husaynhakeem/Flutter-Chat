@@ -94,14 +94,14 @@ class ChatScreenState extends State {
 
 class ChatMessage extends StatelessWidget {
 
-  final String text;
+  ChatMessage({this.text});
 
-  ChatMessage({this.text})
+  final String text;
 
   @override
   Widget build(BuildContext context) {
     return new Container(
-        margin: const EdgeInsets.symmetric(horizontal: 8.0),
+        margin: const EdgeInsets.symmetric(vertical: 10.0),
         child: new Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
